@@ -24,6 +24,7 @@
   .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
   .grid .frame{padding:6px 6px 8px}
   .grid .frame:last-child:nth-child(odd){grid-column:1/-1;width:60%;justify-self:center}
+  .grid.lead .frame:last-child:nth-child(odd){grid-column:auto;width:auto;justify-self:stretch}
   .tl{transform:rotate(-1.2deg)} .tr{transform:rotate(1.1deg)}
   .cover h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;font-size:clamp(56px,16vw,88px);line-height:1;text-align:center;margin:14px 0 18px}
   .cover h1 span{font-style:italic;color:var(--accent)}
@@ -82,7 +83,8 @@
   <section class="slide" data-label="Chapter 3">
     <div class="inner">
       <div class="chap">Chapter 3</div><h2>Grandpa &amp; Grandma</h2>
-      <div class="grid">
+      <div class="grid lead">
+        <div class="frame" style="grid-column:1/-1"><img src="photos/3372.jpg" alt=""></div>
         <div class="frame tl"><img src="photos/3356.jpg" alt=""></div>
         <div class="frame tr"><img src="photos/3354.jpg" alt=""></div>
       </div>
