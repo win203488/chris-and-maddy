@@ -25,6 +25,12 @@
   .grid .frame{padding:6px 6px 8px}
   .grid .frame:last-child:nth-child(odd){grid-column:1/-1;width:60%;justify-self:center}
   .grid.lead .frame:last-child:nth-child(odd){grid-column:auto;width:auto;justify-self:stretch}
+  .final .frame{width:fit-content;max-width:100%}
+  .final .frame img{width:auto;max-width:100%;max-height:calc(100dvh - 76px - 300px)}
+  .final h2{margin-top:16px!important}
+  .grid.stack{grid-template-columns:1fr;gap:18px}
+  .grid.stack .frame{width:fit-content;max-width:100%;justify-self:center}
+  .grid.stack .frame img{width:auto;max-width:100%;max-height:calc((100dvh - 76px - 190px)/2)}
   .tl{transform:rotate(-1.2deg)} .tr{transform:rotate(1.1deg)}
   .cover h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;font-size:clamp(56px,16vw,88px);line-height:1;text-align:center;margin:14px 0 18px}
   .cover h1 span{font-style:italic;color:var(--accent)}
@@ -94,7 +100,7 @@
   <section class="slide" data-label="Chapter 4">
     <div class="inner">
       <div class="chap">Chapter 4</div><h2>Every Team in the League</h2>
-      <div class="grid">
+      <div class="grid stack">
         <div class="frame tl"><img src="photos/3348.jpg" alt=""></div>
         <div class="frame tr"><img src="photos/3347.jpg" alt=""></div>
       </div>
@@ -151,7 +157,7 @@
       <div class="frame solo" style="margin-top:14px"><img src="photos/family.jpg" alt="Chris, Maddy and Emilia"></div>
       <h2>Chris, Maddy &amp; Emilia</h2>
       <p>To the new Nudo family.</p>
-      <div class="cheers">Cheers!</div>
+      <div class="cheers">Salute!</div>
     </div>
   </section>
 
